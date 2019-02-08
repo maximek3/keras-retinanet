@@ -182,6 +182,8 @@ def main(args=None):
 
         print('mAP using the weighted average of precisions among classes: {:.4f}'.format(sum([a * b for a, b in zip(total_instances, precisions)]) / sum(total_instances)))
         print('mAP: {:.4f}'.format(sum(precisions) / sum(x > 0 for x in total_instances)))
+        
+        return precisions, total_instances
 
 
 if __name__ == '__main__':
