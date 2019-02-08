@@ -72,6 +72,7 @@ def main(args=None):
             anchor_parameters = parse_anchor_parameters(args.config)
 
     # load the model
+    print(args.model_in)
     model = models.load_model(args.model_in, backbone_name=args.backbone)
 
     # check if this is indeed a training model
