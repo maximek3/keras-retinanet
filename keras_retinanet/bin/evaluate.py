@@ -116,11 +116,8 @@ def main(args=None):
     # parse arguments
     if args is None:
         args = sys.argv[1:]
-    print(args)
-    print(type(args))
     args = parse_args(args)
-    print(args)
-    print(type(args))
+
 
     # make sure keras is the minimum required version
     check_keras_version()
